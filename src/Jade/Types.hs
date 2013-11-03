@@ -7,5 +7,5 @@ type Attributes = M.Map String String
 
 data Jade = 
 	  Text String
-	| Tag TagName Attributes Jade
+	| Tag TagName Attributes [Jade]
 	deriving (Show, Eq)
